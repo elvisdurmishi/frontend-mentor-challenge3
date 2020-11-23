@@ -53,7 +53,7 @@ body {
 
 .phone {
   position: relative;
-  left: 80px;
+  margin-left: 95px;
   border-radius: 30px 30px 30px 30px;
   width: 300px;
   border: 10px solid #fff;
@@ -71,7 +71,7 @@ body {
   border-radius: 0 0 30px 30px;
   background-color: #fff;
   height: 20px;
-  width: 70%;
+  width: 50%;
   color: #fff;
   z-index: 2;
 }
@@ -209,7 +209,12 @@ body {
   align-items: center;
 }
 
+.title {
+  color: hsl(271, 36%, 24%);
+}
+
 .description {
+  color: hsl(270, 7%, 64%);
   font-size: 1rem;
   padding: 3% 35% 5% 0%;
 }
@@ -242,6 +247,30 @@ body {
   border-radius: 50%;
   margin-left: -50px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .big-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+      'phone'
+      'descripton';
+  }
+  .shape {
+    border-radius: 0 0 250px 100px;
+    width: 80%;
+    left: -25%;
+  }
+  .shape-gray {
+    right: 50px;
+  }
+  .phone {
+    margin-left: 0;
+  }
+  .container-items {
+    text-align: center;
+  }
 }
 
 /* Radio Buttons */
